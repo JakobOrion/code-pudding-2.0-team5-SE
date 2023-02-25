@@ -1,2 +1,2 @@
-# code-pudding-2.0-team5-SE
+# Code Pudding 2.0 - Team 5 (software engineering repo)
 A visual essay for Code Pudding 2.0 with Practicum.
