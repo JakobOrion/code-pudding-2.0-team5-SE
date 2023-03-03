@@ -1,0 +1,51 @@
+.section {
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "title text"
+    "title chart";
+  grid-gap: 20px 40px;
+  color: hsla(288, 59%, 22%, 1);
+  padding-bottom: 60px;
+}
+
+.section__title {
+  grid-area: title;
+  font-size: 40px;
+  font-weight: 400;
+  align-self: baseline;
+  margin: 0;
+}
+
+.section__text {
+  grid-area: text;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  align-self: baseline;
+  margin: 0;
+}
+
+.section__chart {
+  min-height: 400px;
+  grid-area: chart;
+  border: 1px solid hsla(288, 59%, 22%, 1);
+  border-radius: 2px;
+  padding: 10px;
+  margin: 0;
+}
+
+.anychart-credits-text, .anychart-credits-logo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "text"
+      "chart";
+  }
+}
