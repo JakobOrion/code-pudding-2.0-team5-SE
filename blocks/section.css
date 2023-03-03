@@ -16,6 +16,7 @@
   font-weight: 400;
   align-self: baseline;
   margin: 0;
+  max-width: 350px;
 }
 
 .section__text {
