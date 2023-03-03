@@ -26,12 +26,12 @@
   font-weight: 400;
   margin: 0;
   align-self: end;
+  padding-top: 80px;
 }
 
 .header__title_bold {
   font-weight: 700;
   white-space: nowrap;
-  display: block;
 }
 
 .header__subtitle {
@@ -53,6 +53,7 @@
   .header__title {
     font-size: 50px;
     line-height: 58px;
+    padding-top: 60px;
   }
 
   .header__subtitle {
