@@ -1,0 +1,38 @@
+.header {
+  background-color: hsla(346, 37%, 45%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  font-family: 'Outfit', sans-serif;
+}
+
+.header__container {
+  max-width: 1300px;
+  box-sizing: border-box;
+  padding: 80px 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title stopwatch"
+    "subtitle stopwatch";
+}
+
+.header__title {
+  grid-area: title;
+  font-size: 70px;
+  line-height: 78px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.header__title_bold {
+  font-weight: 700;
+  display: block;
+}
+
+.header__subtitle {
+  grid-area: subtitle;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 400;
+  margin: 0;
+}

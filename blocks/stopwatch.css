@@ -1,0 +1,32 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.stopwatch {
+  grid-area: stopwatch;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  height: min-content;
+}
+
+.stopwatch__background {
+  grid-area: 1/1;
+  max-width: 100%;
+}
+
+.stopwatch__hand {
+  grid-area: 1/1;
+  max-width: 100%;
+  align-self: end;
+}
+
+.stopwatch__hand_animated {
+  animation: rotation infinite linear;
+  animation-duration: 30s;
+}

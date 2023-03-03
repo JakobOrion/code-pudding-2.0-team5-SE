@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="445" id="watchhand" data-name="watchhand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.1 445.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #2d0637;
+      }
+    </style>
+  </defs>
+  <g id="stopwatch">
+    <g>
+      <g id="watchhand">
+        <path id="Line_2" data-name="Line 2" class="cls-2" d="M228.13,224.17c.91-2.61-.47-5.46-3.08-6.36-2.61-.91-5.46,.47-6.36,3.08l9.45,3.28h0Zm-9.45-3.28l-47.61,136.96,9.45,3.28,47.61-136.96-9.45-3.28h0Z"/>
+        <path id="Line_1" data-name="Line 1" class="cls-2" d="M227.79,209.93c-6.95-2.42-14.55,1.26-16.97,8.22-2.42,6.95,1.26,14.55,8.22,16.97s14.55-1.26,16.97-8.22c2.42-6.95-1.26-14.55-8.22-16.97Zm-55.08,158.45l21.84-18.88-27.27-9.48,5.43,28.35h0Zm48.34-146.66l-43.31,124.6,4.72,1.64,43.31-124.6-4.72-1.64Z"/>
+      </g>
+      <rect class="cls-1" width="445.1" height="445.1"/>
+    </g>
+  </g>
+</svg>
