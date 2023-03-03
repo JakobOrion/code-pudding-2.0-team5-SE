@@ -7,32 +7,82 @@
 .header__container {
   max-width: 1300px;
   box-sizing: border-box;
-  padding: 80px 30px;
+  padding: 80px 40px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto minmax(250px, 445px);
   grid-template-areas:
     "title stopwatch"
     "subtitle stopwatch";
+  grid-column-gap: 40px;
+  overflow: hidden;
 }
 
 .header__title {
+  max-width: 500px;
   grid-area: title;
   font-size: 70px;
   line-height: 78px;
   font-weight: 400;
   margin: 0;
+  align-self: end;
 }
 
 .header__title_bold {
   font-weight: 700;
+  white-space: nowrap;
   display: block;
 }
 
 .header__subtitle {
+  max-width: 540px;
   grid-area: subtitle;
   font-size: 32px;
   line-height: 46px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
+  padding-top: 40px;
+}
+
+@media (max-width: 980px) {
+  .header__container {
+    padding: 60px 40px;
+    grid-template-columns: auto minmax(200px, 320px);
+  }
+
+  .header__title {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "title"
+    "subtitle"
+    "stopwatch";
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    padding: 50px 20px;
+  }
+  .header__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }

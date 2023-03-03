@@ -13,6 +13,7 @@
   grid-template-columns: 1fr;
   max-width: 100%;
   height: min-content;
+  justify-self: end;
 }
 
 .stopwatch__background {
@@ -28,5 +29,5 @@
 
 .stopwatch__hand_animated {
   animation: rotation infinite linear;
-  animation-duration: 30s;
+  animation-duration: 20s;
 }
