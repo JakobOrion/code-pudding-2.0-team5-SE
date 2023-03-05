@@ -39,6 +39,7 @@
   margin: 0 0 30px 0;
   display: grid;
   grid-template-columns: 1fr;
+  min-height: 400px;
 }
 
 .section__charts-container_dual {
@@ -62,5 +63,8 @@
     grid-template-areas:
       "title"
       "content";
+  }
+  .section__charts-container_dual {
+    grid-template-columns: 1fr;
   }
 }
