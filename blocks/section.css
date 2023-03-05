@@ -67,4 +67,8 @@
   .section__charts-container_dual {
     grid-template-columns: 1fr;
   }
+
+  .field-of-study-chart-gender {
+    display: none;
+  }
 }
