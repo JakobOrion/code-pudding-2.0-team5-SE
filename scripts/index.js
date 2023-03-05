@@ -56,6 +56,56 @@ anychart.onDocumentReady(function () {
   chart.draw();
 });
 
+/* Bar chart Field of Study by Gender */
+anychart.onDocumentReady(function () {
+  // Create palette.
+  var customPalette = anychart.palettes.rangeColors();
+	customPalette.items(['#2D0637', '#9E485C']);
+    customPalette.count(2);
+  
+  var data = [
+    ["Business/Econ/Finance", 1502, 423],
+    ["Engineering", 671, 193],
+    ["Biological Sciences/Chemistry/Physics", 511, 482],
+    ["Law", 389, 276],
+    ["Political Science/International Affairs", 329, 380],
+    ["Social Science, Psychologist", 172, 524],
+    ["Math", 125, 82],
+    ["History/Religion/Philosophy", 108, 133],
+    ["Education, Academia", 73, 553],
+    ["Film", 69, 57],
+    ["English/Creative Writing/ Journalism", 55, 270],
+    ["Other", 37, 15],
+    ["Medical Science, Pharmaceuticals, and Bio Tech", 29, 114],
+    ["Fine Arts/Arts Administration", 29, 158],
+    ["Undergrad/undecided", 19, 0],
+    ["Social Work", 18, 450],
+    ["Architecture", 10],
+    ["Languages", 9, 31],
+   ];
+    // Creates Bar chart.
+    var chart = anychart.bar();
+    chart.palette(customPalette);
+    chart.legend(true);
+    chart.title().fontFamily('Outfit');
+    chart.title().fontColor('hsla(288, 59%, 22%, 1)');
+    chart.title().fontSize(20);
+    chart.background().fill("hsla(0, 88%, 90%, 1)");
+    chart.labels().fontFamily('Outfit');
+    chart.labels().fontSize(40);
+    var dataSet = anychart.data.set(data);
+    var mapping1 = dataSet.mapAs({x: 0, value: 1});
+    var mapping2 = dataSet.mapAs({x: 0, value: 2});
+    var series1 = chart.bar(mapping1);
+    var series2 = chart.bar(mapping2);
+    series1.name("Male");
+    series2.name("Female");
+
+    chart.title('Field of Study by Gender');
+    chart.container('field-of-study-chart-gender');
+    chart.draw();
+});
+
 /* Pie Chart - race distribution by gender 0 */
 anychart.onDocumentReady(function () {
   
